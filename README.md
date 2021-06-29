@@ -1,10 +1,12 @@
 # react-native-codelab
 리엑트 네이티브 한달 완성/코드랩
 
-expo를 통한 간단한 환경구축 
+Expo CLI 사용
 
 <YouTube 강의>
 https://www.youtube.com/watch?v=9xzmAXbesaY
+<Git 주소>
+https://github.com/grotesq/codelab-react-native-5th
 
 ------
 
@@ -22,6 +24,7 @@ https://reactnavigation.org/
 
 
 # error 모음
+AsyncStorage 모듈@react-native-community/async-storage 실행 오류 => @react-native-async-storage/async-storage 버전 
 
 @react~ 붙은 모듈은 설치 후 불러오기가 안될 수도 있다. => npm start를 다시 해주기
 
