@@ -13,13 +13,13 @@ https://github.com/grotesq/codelab-react-native-5th
 
 # 학습 자료 / 참고 사이트
 
-1. #expo (간단한 환경 구축)
+1. expo (간단한 환경 구축)
 https://expo.io/
 
-2. #React Native 공식 문서
+2. React Native 공식 문서
 https://reactnative.dev/docs/getting-started
 
-3. #React Navigation 공식 문서
+3. React Navigation 공식 문서
 https://reactnavigation.org/
 
 
