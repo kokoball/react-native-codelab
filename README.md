@@ -8,6 +8,7 @@ https://www.youtube.com/watch?v=9xzmAXbesaY
 <Git 주소>
 https://github.com/grotesq/codelab-react-native-5th
 
+
 ------
 
 # 학습 자료 / 참고 사이트
@@ -22,6 +23,7 @@ https://reactnative.dev/docs/getting-started
 https://reactnavigation.org/
 
 
+------
 
 # error 모음
 AsyncStorage 모듈@react-native-community/async-storage 실행 오류 => @react-native-async-storage/async-storage 버전 
