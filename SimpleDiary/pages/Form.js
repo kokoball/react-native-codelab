@@ -3,6 +3,8 @@ import Container from '../components/Container';
 import Contents from '../components/Contents';
 import Button from '../components/Button';
 import styled from 'styled-components/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 
 const Label = styled.Text`
     font-size: 20px;
@@ -21,6 +23,27 @@ const Input = styled.TextInput`
 function Form({ navigation }) {
     const [date, setDate] = React.useState('');
     const [text, setText] = React.useState('');
+
+    const store = async () => {
+        if( date === '' ) return;
+        if( text === '' ) return;
+
+        let list = await AsyncStorage.getItem( 'list' );
+        if( list === null ) {
+            list = [];
+        }
+        else {
+            list = JSON.parse( list );
+        }
+
+        list.push( {
+            date,
+            text,
+        } );
+        await AsyncStorage.setItem( 'list', JSON.stringify( list ) );
+        navigation.goBack();
+    }
+
     return (
         <Container>
             <Contents>
@@ -40,7 +63,7 @@ function Form({ navigation }) {
                     onChangeText={value=>setText(value)}
                 />
             </Contents>
-            <Button onPress={ () => navigation.goBack() }>
+            <Button onPress={ store }>
                 저장
             </Button>
         </Container>

@@ -3,6 +3,7 @@ import Container from '../components/Container';
 import Contents from '../components/Contents';
 import Button from '../components/Button';
 import styled from 'styled-components/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const ListItem = styled.TouchableOpacity`
     width: 100%;
@@ -13,19 +14,34 @@ const Label = styled.Text`
     font-size: 20px; 
 `;
 // 구조 분해 할당, Destructuring Assignment
-function List( { navigation } ) {
+function List({ navigation }) {
+    const [list, setList] = React.useState([]);
+    const load = async () => {
+        const data = await AsyncStorage.getItem('list');
+        if (data !== null) {
+            setList(JSON.parse(data));
+        }
+    }
+    React.useEffect(() => {
+    const unsubscribe = navigation.addListener('focus', () => {
+        load();
+    });
+        load();
+    return unsubscribe;
+  }, [navigation]); 
     return (
         <Container>
             <Contents>
-                <ListItem onPress= {() => navigation.navigate('Detail')}>
-                    <Label>2020-07-01</Label>
-                </ListItem>
-                <ListItem>
-                    <Label>2020-07-02</Label>
-                </ListItem>
-                <ListItem>
-                    <Label>2020-07-03</Label>
-                </ListItem>
+                {list.map(item => {
+                    return (
+                        <ListItem key={item.date}
+                            onPress={() => navigation.navigate('Detail')}
+                        >
+                            <Label>{item.date}</Label>
+                        </ListItem>
+                    )
+                })}
+                
             </Contents>
             <Button onPress={ ()=> navigation.navigate('Form')}>
                 새 일기 작성
