@@ -22,7 +22,14 @@ https://reactnative.dev/docs/getting-started
 3. React Navigation 공식 문서
 https://reactnavigation.org/
 
+4. 자바스크립트 비동기 처리와 콜백 함수
+https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/
 
+5. 자바스크립트 Promise 
+https://joshua1988.github.io/web-development/javascript/promise-for-beginners/ 
+
+6. 자바스크립트 async 와 await
+https://joshua1988.github.io/web-development/javascript/js-async-await/  
 ------
 
 # error 모음
