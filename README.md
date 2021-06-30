@@ -5,6 +5,7 @@ Expo CLI 사용
 
 <YouTube 강의>
 https://www.youtube.com/watch?v=9xzmAXbesaY
+
 <Git 주소>
 https://github.com/grotesq/codelab-react-native-5th
 
