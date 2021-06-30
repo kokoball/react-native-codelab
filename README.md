@@ -26,7 +26,7 @@ https://reactnavigation.org/
 ------
 
 # error 모음
-AsyncStorage 모듈@react-native-community/async-storage 실행 오류 => @react-native-async-storage/async-storage 버전 
+AsyncStorage 모듈@react-native-community/async-storage 실행 오류 => @react-native-async-storage/async-storage 버전 // expo install @react-native-async-storage/async-storage
 
 @react~ 붙은 모듈은 설치 후 불러오기가 안될 수도 있다. => npm start를 다시 해주기
 
