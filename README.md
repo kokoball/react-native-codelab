@@ -5,6 +5,7 @@ Expo CLI 사용
 
 <YouTube 강의>
 https://www.youtube.com/watch?v=9xzmAXbesaY
+
 <Git 주소>
 https://github.com/grotesq/codelab-react-native-5th
 
@@ -22,11 +23,18 @@ https://reactnative.dev/docs/getting-started
 3. React Navigation 공식 문서
 https://reactnavigation.org/
 
+4. 자바스크립트 비동기 처리와 콜백 함수
+https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/
 
+5. 자바스크립트 Promise 
+https://joshua1988.github.io/web-development/javascript/promise-for-beginners/ 
+
+6. 자바스크립트 async 와 await
+https://joshua1988.github.io/web-development/javascript/js-async-await/  
 ------
 
 # error 모음
-AsyncStorage 모듈@react-native-community/async-storage 실행 오류 => @react-native-async-storage/async-storage 버전 
+AsyncStorage 모듈@react-native-community/async-storage 실행 오류 => @react-native-async-storage/async-storage 버전 // expo install @react-native-async-storage/async-storage
 
 @react~ 붙은 모듈은 설치 후 불러오기가 안될 수도 있다. => npm start를 다시 해주기
 
