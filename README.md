@@ -32,8 +32,11 @@ https://joshua1988.github.io/web-development/javascript/js-async-await/
 ------
 
 # error 모음
-AsyncStorage 모듈@react-native-community/async-storage 실행 오류 => @react-native-async-storage/async-storage 버전 // expo install @react-native-async-storage/async-storage
+1. AsyncStorage 모듈@react-native-community/async-storage 실행 오류 
+@react-native-async-storage/async-storage 버전 // expo install @react-native-async-storage/async-storage
 
-@react~ 붙은 모듈은 설치 후 불러오기가 안될 수도 있다. => npm start를 다시 해주기
+2. @react~ 붙은 모듈은 설치 후 불러오기가 안될 수도 있다. 
+npm start를 다시 해주기
 
-
+3. 윈도우 리엑트 네이티브 CLI 환경설정
+https://dev-yakuza.posstree.com/ko/react-native/install-on-windows/
