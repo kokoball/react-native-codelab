@@ -1,18 +1,26 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-import React from "react";
+import React from 'react';
+import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import BoxOffice from './pages/BoxOffice';
 
+const Theme = {
+  ...DefaultTheme,
+  color: {
+    ...DefaultTheme.colors,
+    background: '#ffffff',
+  },
+};
+
+const Stack = createStackNavigator();
 
 const App: () => React$Node = () => {
   return (
     <>
-      <BoxOffice/>
+      <NavigationContainer theme={Theme}>
+        <Stack.Navigator>
+          <Stack.Screen name="BoxOffice" component={BoxOffice} options={{headerShown:false}}/>
+        </Stack.Navigator>
+    </NavigationContainer>
     </>
   );
 };
