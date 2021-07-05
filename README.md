@@ -29,6 +29,9 @@ https://joshua1988.github.io/web-development/javascript/promise-for-beginners/
 
 6. 자바스크립트 async 와 await
 https://joshua1988.github.io/web-development/javascript/js-async-await/  
+
+7. React Effect Hook
+https://ko.reactjs.org/docs/hooks-effect.html
 ------
 
 # error 모음
