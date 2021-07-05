@@ -10,7 +10,7 @@ const Container = styled.SafeAreaView`
 const Contents = styled.ScrollView`
     flex: 1;
 `;
-
+ 
 const Title = styled.Text`
     font-size: 24px;
     font-weight: bold;
@@ -58,7 +58,9 @@ function BoxOffice(props) {
                     <ActivityIndicator size={'large'}/>
                 )}
                 {list.map(item => (
-                    <ListItem key= {item.movieCd}>
+                    <ListItem key={item.movieCd} onPress={() => {
+                        props.navigation.navigate('MovieDetail', { movieCd: item.movieCd });
+                    }}>
                         <Rank>{item.rank}</Rank>
                         <MovieName>{ item.movieNm }</MovieName>
                     </ListItem>
