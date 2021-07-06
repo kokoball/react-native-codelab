@@ -1,23 +1,29 @@
-import React from 'react';
-import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
-import BoxOfficeNavigator from './navigators/BoxOfficeNavigator';
+  
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ * @flow strict-local
+ */
 
+import React from 'react';
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
+import AppNavigator from './navigators/AppNavigator';
 
 const Theme = {
   ...DefaultTheme,
-  color: {
+  colors: {
     ...DefaultTheme.colors,
     background: '#ffffff',
   },
 };
 
-const Stack = createStackNavigator();
-
 const App: () => React$Node = () => {
   return (
     <>
-      <NavigationContainer theme={Theme}>
-        <BoxOfficeNavigator/>
+      <NavigationContainer theme={ Theme }>
+        <AppNavigator/>
       </NavigationContainer>
     </>
   );

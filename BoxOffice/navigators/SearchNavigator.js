@@ -1,18 +1,17 @@
-  
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import BoxOffice from '../pages/BoxOffice';
+import Search from '../pages/Search';
 import MovieDetail from '../pages/MovieDetail';
 
 const Stack = createStackNavigator();
   
-function BoxOfficeNavigator() {
+function SearchNavigator() {
     return (
         <Stack.Navigator screenOptions={{ headerShown: false }} >
-          <Stack.Screen name="BoxOffice" component={BoxOffice} />
+          <Stack.Screen name="Search" component={Search} />
           <Stack.Screen name="MovieDetail" component={MovieDetail} />
         </Stack.Navigator>
     )
 }
 
-export default BoxOfficeNavigator;
+export default SearchNavigator;
