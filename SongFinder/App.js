@@ -62,7 +62,7 @@ const App: () => Node = () => {
         <Contents>
           {list.map(item => (
             <ListItem key={item.brand + item.no}>
-              <Label>`${item.brand} / [${item.no}] ${item.title}`</Label>
+              <Label>{`${item.brand} / [${item.no}] ${item.title}`}</Label>
             </ListItem>
           ))}
         </Contents>
