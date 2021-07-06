@@ -25,9 +25,30 @@ const Description = styled.Text`
     line-height: 28px;
 `;
 
-const Back = styled.Button`
-
+const Back = styled.TouchableOpacity`
+    height: 50px;
+    padding: 12px;
+    justify-content: center;
 `;
+
+const BackLabel = styled.Text`
+    font-size: 18px;
+    color: #0000cc;
+`;
+
+const Header = styled.View`
+    height: 50px;
+    border-bottom-color: #e5e5e5 ;
+    border-bottom-width: 1px;
+    justify-content: center;
+    align-items: center;
+`;
+
+const HeaderTitle = styled.Text`
+    font-size: 20px;
+    font-weight: bold;
+`;
+
 
 function MovieDetail(props) {
     const [info, setInfo] = React.useState(null);
@@ -44,6 +65,12 @@ function MovieDetail(props) {
     }, []);
     return (
         <Container>
+            <Header>
+                <Back onpress={() => props.navigation.goBack()}>
+                    <BackLabel></BackLabel>
+                </Back>
+                <HeaderTitle>영화 정보 조회</HeaderTitle>
+            </Header>
             <Contents>
                 {info === null ? (
                     <ActivityIndicator size={'large'}/>
@@ -57,8 +84,7 @@ function MovieDetail(props) {
                     <Description>감독 : {info.direcotrs.map(item => item.peopleNm).join(', ')}</Description>
                     <Description>배우 : {info.actors.map(item => item.nationNM).join(', ')}</Description>
                     </>
-                )}                
-                <Back title={'돌아가기'} onPress={() => props.navigation.goBack()}/>
+                )} 
             </Contents> 
         </Container>
     )

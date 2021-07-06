@@ -1,8 +1,6 @@
 import React from 'react';
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import BoxOffice from './pages/BoxOffice';
-import MovieDetail from './pages/MovieDetail';
+import BoxOfficeNavigator from './navigators/BoxOfficeNavigator';
 
 
 const Theme = {
@@ -19,11 +17,8 @@ const App: () => React$Node = () => {
   return (
     <>
       <NavigationContainer theme={Theme}>
-        <Stack.Navigator>
-          <Stack.Screen name="BoxOffice" component={BoxOffice} options={{headerShown:false}}/>
-          <Stack.Screen name="MovieDetail" component={MovieDetail}/>
-        </Stack.Navigator>
-    </NavigationContainer>
+        <BoxOfficeNavigator/>
+      </NavigationContainer>
     </>
   );
 };
