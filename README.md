@@ -46,3 +46,6 @@ https://dev-yakuza.posstree.com/ko/react-native/install-on-windows/
 
 4. npm 설치 오류 (unable to resolve dependency tree) npm ERR! ERESOLVE 
 https://iancoding.tistory.com/154   //   --save --legacy-peer-deps  추가하기
+
+5. import ImagePicker from 'react-native-image-picker'; 오류 
+https://github.com/react-native-image-picker/react-native-image-picker // 버전 확인
