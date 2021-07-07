@@ -48,4 +48,8 @@ https://dev-yakuza.posstree.com/ko/react-native/install-on-windows/
 https://iancoding.tistory.com/154   //   --save --legacy-peer-deps  추가하기
 
 5. import ImagePicker from 'react-native-image-picker'; 오류 
-https://github.com/react-native-image-picker/react-native-image-picker // 버전 확인
+https://github.com/react-native-image-picker/react-native-image-picker // 버전 확인 (2.3.3)으로 설치
+npm install react-native-image-picker@2.3.3  // 4.0 이상은 import 다름
+
+6. 라이브러리 재설치 후 package 에러 
+npx react-native start --reset-cache
