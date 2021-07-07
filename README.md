@@ -44,7 +44,7 @@ npm start를 다시 해주기
 3. 윈도우 리엑트 네이티브 CLI 환경설정
 https://dev-yakuza.posstree.com/ko/react-native/install-on-windows/
 
-4. npm 설치 오류 (unable to resolve dependency tree) npm ERR! ERESOLVE 
+4. npm 설치 오류 (unable to resolve dependency tree) npm ERR! ERESOLVE  (styled-components)
 https://iancoding.tistory.com/154   //   --save --legacy-peer-deps  추가하기
 
 5. import ImagePicker from 'react-native-image-picker'; 오류 
