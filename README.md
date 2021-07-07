@@ -58,7 +58,7 @@ npx react-native start --reset-cache
 https://github.com/react-native-image-picker/react-native-image-picker/issues/845 // 권한 추가
 ./android/app/src/main/AndroidManifest.xml, not the one somewhere in the generated app directory)
 
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
  
