@@ -53,3 +53,12 @@ npm install react-native-image-picker@2.3.3  // 4.0 이상은 import 다름
 
 6. 라이브러리 재설치 후 package 에러 
 npx react-native start --reset-cache
+
+7. error": "Permissions weren't granted" // Android Emulator 권한 에러
+https://github.com/react-native-image-picker/react-native-image-picker/issues/845 // 권한 추가
+./android/app/src/main/AndroidManifest.xml, not the one somewhere in the generated app directory)
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ 
